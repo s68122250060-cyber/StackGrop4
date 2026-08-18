@@ -1,11 +1,9 @@
-# Generative AI Usage Log — Group 04
-
-| Task | AI assistance | Verification | Student revision |
+| งาน | การช่วยเหลือจาก AI | การตรวจสอบ | การปรับปรุงแก้ไขโดยนักศึกษา |
 |---|---|---|---|
-| Tokenization / multi-digit numbers | Suggested regex `split("\s+")` | Tested `(3+4)*2`; regex alone did not separate adjacent numbers/operators reliably | Reimplemented character-by-character tokenizer with `StringBuilder` |
-| Big-O analysis | Initially suggested O(n²) because of nested-looking loops | Checked amortized push/pop behavior and traced the stacks | Corrected analysis to O(n) |
-| Test cases | Suggested general cases | Compared against the assignment's mandatory 8 cases | Added all required boundary/error cases |
-| Performance experiment / graph | Helped draft `ExperimentRunner` and `ExpressionGenerator` | Compiled and ran; compared operation counts with the original algorithm logic | Kept Algorithm A/B logic unchanged; used helper tools only for measurement |
+| การตัดคำ (Tokenization) / ตัวเลขหลายหลัก | แนะนำให้ใช้ regex `split("\s+")` | ทดสอบด้วย `(3+4)*2` พบว่า regex เพียงอย่างเดียวไม่สามารถแยกตัวเลขหรือตัวดำเนินการที่อยู่ติดกันได้อย่างแม่นยำ | เขียนโค้ดส่วนตัดคำใหม่โดยประมวลผลทีละตัวอักษรและใช้ `StringBuilder` |
+| การวิเคราะห์ Big-O | ตอนแรกแนะนำว่าเป็น O(n²) เนื่องจากดูเหมือนมีการวนซ้ำซ้อนกัน (nested loops) | ตรวจสอบพฤติกรรม amortized ของการ push/pop และไล่ลำดับการทำงานของ stack | แก้ไขผลการวิเคราะห์เป็น O(n) |
+| กรณีทดสอบ (Test cases) | แนะนำกรณีทดสอบทั่วไป | เปรียบเทียบกับกรณีทดสอบบังคับ 8 กรณีที่โจทย์กำหนด | เพิ่มกรณีทดสอบขอบเขต (boundary cases) และกรณีที่เกิดข้อผิดพลาด (error cases) ครบถ้วนตามกำหนด |
+| การทดลองประสิทธิภาพ / กราฟ | ช่วยร่างโค้ด `ExperimentRunner` และ `ExpressionGenerator` | คอมไพล์และรันโปรแกรม; เปรียบเทียบจำนวนการทำงาน (operation counts) กับตรรกะของอัลกอริทึมเดิม | คงตรรกะของอัลกอริทึม A และ B ไว้ตามเดิม; ใช้เครื่องมือช่วยเฉพาะสำหรับการวัดผลเท่านั้น |
 
-## Reflection
-AI was useful for brainstorming and checking structure, but its output was treated as a draft. The group verified the code, test cases, complexity analysis, and experimental results before using them. Every member must be able to explain the source code.
+## การสะท้อนความคิดเห็น (Reflection)
+AI มีประโยชน์ในการระดมสมองและตรวจสอบโครงสร้าง แต่ผลลัพธ์ที่ได้ถือเป็นเพียงร่างเบื้องต้นเท่านั้น ทางกลุ่มได้ตรวจสอบโค้ด กรณีทดสอบ การวิเคราะห์ความซับซ้อน และผลการทดลองอย่างละเอียดก่อนนำไปใช้งานจริง สมาชิกทุกคนจะต้องสามารถอธิบายการทำงานของซอร์สโค้ดได้
