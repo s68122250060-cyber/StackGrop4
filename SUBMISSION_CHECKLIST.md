@@ -1,0 +1,15 @@
+# Submission checklist
+- [ ] Source Code Java
+- [ ] GitHub Repository
+- [ ] Report PDF
+- [ ] Presentation slides
+- [ ] Pseudocode
+- [ ] Flowchart
+- [ ] Class Diagram
+- [ ] Test Case Table
+- [ ] Experiment CSV
+- [ ] Comparison graph
+- [ ] AI Usage Log
+- [ ] Member work-division report
+- [ ] Replace member placeholders in `group-members.md`
+- [ ] Add each member's GitHub commit before submission
